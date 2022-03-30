@@ -25,9 +25,9 @@ function compute()
 //Submit form & validate Amount
 function validateForm() {
     var number = document.forms["mainform"]["principal"].value;
-    if (number <= "0") {
-      alert("Enter a positive number");
-      return true;
+    if (number=="" || number==null || number<="0") {
+        alert("Enter a positive number");
+        return true;
     }
     else
     return false;

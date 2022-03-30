@@ -2,20 +2,30 @@ body {
     background-color:black;
     font-family:arial;
     color:white;
-    }
-h1{color:grey;font-family:verdana; text-align:center}
+}
+h1{
+    color:grey;font-family:verdana; text-align:center;
+}
+label{
+    display:inline-block;
+    width:150px;
+}
 .maindiv {
     background-color:white;
     color:black;
     font-weight: 600;
-    width: 500px;
+    width: 480px;
     padding: 20px;
     border-radius: 25px;
     margin: auto;
     line-height:2;
     }
 .mainform { 
-    width: 400px;
-    margin: auto;
+    padding-left:50px;
+    }
+.resultdiv {
+    line-height:1;
+    padding-top: 10px;
+    padding-bottom: 10px;
     }
 footer{text-align:left}
