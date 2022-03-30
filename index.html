@@ -7,10 +7,11 @@
     <body>
         <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
-        <form class="mainform">
-        Amount <input type="number"  id="principal">  <br/>
-        Interest Rate <input type="range"  id="rate" min="1" max="20" value="10.25" step="0.25">
-        <span id="rate_val">10.25%</span><br>
+        <form name="mainform" class="mainform" onsubmit="return validateForm()">
+        Amount <input type="number"  id="principal" required><br/>
+        Interest Rate <input type="range"  id="rate" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()">
+        <span id="rate_val">10.25</span>
+        <span>%</span><br>
         <label for="years">No. of Years</label>
         <select name="years" id="years">
             <option value="1">1</option>
@@ -25,8 +26,7 @@
             <option value="10">10</option>
         </select><br>
         <button onclick="compute()">Compute Interest</button><br>
-        <span id="result">
-        </span>
+        <span id="result"></span>
         </form>
         <footer>
             &#169; This Calculator belongs to Rinalds Tretjakovs
